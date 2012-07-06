@@ -1,6 +1,7 @@
 
 <?php
 /*
+added a line
 <html>
 <body>
 <form method="post" action="http://www.lecturesmart.com/42/functions/read_discussion.php">
