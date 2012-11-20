@@ -3,9 +3,10 @@
 $ticker = 'amzn';
 
 
-if(validateTicker){
+if(validateTicker($ticker)){
 	getNews($ticker);
 }else{
+	echo 'invalid ticker';
 	return false;
 }
 
@@ -23,10 +24,9 @@ function getNews($ticker) {
 			$tempTitles .= $title.",tom,";
 			$titleArray = explode(",tom,", $tempTitles);
 			
-			echo "TITLE: " . $item->title . "<br>";
-			echo "DATE: " . trimDate($item->pubDate) . "<br>";
-		}else{
-		}		
+			echo "TITLE: " . $item->title . "";
+			echo "DATE: " . trimDate($item->pubDate) . "";
+		}
 	}
 }
 
