@@ -7,7 +7,7 @@
 		<form name="check" method="POST" action="finance.php" style="margin-bottom:3px;">
 			<label class="hint">enter a valid symbol:</label>
 			<input type="text" class="ticker" name="ticker">
-			<input type="submit" class="check" value="check">
+			<input type="submit" class="btn" value="check">
 		</form>
 	</div>
 </div>

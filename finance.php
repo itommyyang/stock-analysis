@@ -54,7 +54,14 @@ if($proceed){
 	?>
 
 	<!-- tweets from stocktwits -->	
-	<div id="stocktwits-widget-news" style="width:460px;margin:8px auto 0 auto;"></div>
+	<div class="content">
+		<div class="blocktitle">
+			live tweets feed
+		</div>
+		<div class="blockcontent">
+			<div id="stocktwits-widget-news" style="width:460px;margin:8px auto 0 auto;"></div>
+		</div>
+	</div>
 	<hr class="blockdivider">
 	
 </div><!-- end middle column -->
@@ -117,7 +124,7 @@ if($proceed){
 <!-- stocktwits js -->
     <script type="text/javascript" src="http://stocktwits.com/addon/widget/2/widget-loader.min.js"></script>
 	<script type="text/javascript">
-	STWT.Widget({container: 'stocktwits-widget-news', symbol: ticker, width: '460', height: '500', limit: '15', scrollbars: 'true', streaming: 'true', title: ticker+' ideas', style: {link_color: '4871a8', link_hover_color: '4871a8', header_text_color: '000000', border_color: 'cecece', divider_color: 'cecece', divider_color: 'cecece', divider_type: 'solid', box_color: 'f5f5f5', stream_color: 'ffffff', text_color: '000000', time_color: '999999'}});
+	STWT.Widget({container: 'stocktwits-widget-news', symbol: ticker, width: '460', height: '700', limit: '15', scrollbars: 'true', streaming: 'true', title: ticker+' ideas', style: {link_color: '4871a8', link_hover_color: '4871a8', header_text_color: '000000', border_color: 'cecece', divider_color: 'cecece', divider_color: 'cecece', divider_type: 'solid', box_color: 'f5f5f5', stream_color: 'ffffff', text_color: '000000', time_color: '999999'}});
 	</script>
 </body>
 </html>
