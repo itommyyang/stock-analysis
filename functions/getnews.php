@@ -1,16 +1,4 @@
 <?php
-
-$ticker = 'amzn';
-
-
-if(validateTicker($ticker)){
-	getNews($ticker);
-}else{
-	echo 'invalid ticker';
-	return false;
-}
-
-
 //retrieve related news from yahoo
 function getNews($ticker) {
 	$request_url = "http://finance.yahoo.com/rss/headline?s=".$ticker;
@@ -24,9 +12,10 @@ function getNews($ticker) {
 			$tempTitles .= $title.",tom,";
 			$titleArray = explode(",tom,", $tempTitles);
 			
-			echo "TITLE: " . $item->title . "";
-			echo "DATE: " . trimDate($item->pubDate) . "";
-		}
+			echo "<div class='newstitle'><a href=" . $item->link ." target='_blank'>" . $item->title . "</a></div>";
+			echo "<div class='newsdate'>" . trimDate($item->pubDate) . "</div><hr class='divider'>";
+		}else{
+		}		
 	}
 }
 
@@ -52,6 +41,29 @@ function getChart($ticker, $range, $width) {
 	$chart_url = "http://ichart.yahoo.com/z?s=".$ticker."&t=".$range."&q=c&l=on&z=l";
 	echo '<img id="beChanged" src="'.$chart_url.'" style="width:'.$width.'px">';
 	}
+
+//old output the chart range menu
+function oldchartRangeMenu($ticker){
+	echo 	
+	'<a class="home" href="finance.php?ticker='.$ticker.'&range=1d">1 day</a>
+	<a class="home" href="finance.php?ticker='.$ticker.'&range=5d">5 days</a>
+	<a class="home" href="finance.php?ticker='.$ticker.'&range=3m">3 months</a>
+	<a class="home" href="finance.php?ticker='.$ticker.'&range=6m">6 months</a>
+	<a class="home" href="finance.php?ticker='.$ticker.'&range=1y">1 year</a>
+	<a class="home" href="finance.php?ticker='.$ticker.'&range=2y">2 years</a>
+	<a class="home" href="finance.php?ticker='.$ticker.'&range=5y">5 years</a>';
+	}
+
+//output the chart range menu
+function chartRangeMenu($ticker){
+	echo 	
+	'<button class="range" value="1d">1 day</button>
+	<button class="range" value="5d">5 days</button>
+	<button class="range" value="3m">3 months</button>
+	<button class="range" value="6m">6 months</button>
+	<button class="range" value="2y">2 years</button>
+	<button class="range" value="5y">5 years</button>';
+}
 
 // ticker validation
 function validateTicker($ticker){

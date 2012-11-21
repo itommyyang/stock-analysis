@@ -1,0 +1,120 @@
+a:link, a:visited {
+	color: #6698FF;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FFFFFF	;
+	text-decoration: none;
+}
+
+body {
+	font-family: Calibri, Serif;
+	font-size: 100%;
+	color: #2398ff;;
+	text-align:center;
+}
+
+form p{
+	margin: 0px;
+	text-align: left;
+}
+
+form {
+	padding: 10px 20px;
+	border: 1px solid #2398ff;
+	margin-bottom: 12px;
+}
+
+form fieldset {
+	padding:5px 55px;
+	margin:0 auto;
+	border:none;
+}
+
+form label {
+	font-size: 95%;
+	padding: 5px 0;
+	float: left;
+	clear: both;
+	}
+
+label.alert {
+	left;
+	margin-top: 8px;
+	padding:3px 0;
+	background-color: red;
+	font-size: 15px;
+	text-align: center;
+	color: white;
+	-webkit-border-radius: 3px;
+	}
+
+form input {	
+	padding: 4px 0;
+	float: right;
+	}
+
+form input.PIN {
+	border: #2398ff solid 1px;
+	margin:0px;
+	-webkit-border-radius: 3px;
+	}
+
+form input.submit{
+	height: 25px;
+	background-color:white;
+	border: #2398ff solid 1px;
+	color: #2398ff;
+	font-size: 12px;
+	margin: 8px 0px 0px 8px;
+	padding: 0px 18px;
+	text-align: center;
+	float:right;
+	clear:both;
+	-webkit-border-radius: 3px;
+	}
+
+#form-content {
+	position: relative; 
+	z-index: 2;
+	width: 400px; 
+	margin: 8% auto; 
+	padding: 20px 20px 10px 20px; 
+	background: white; 
+	-moz-box-shadow: 0 0 50px white; 
+	-webkit-box-shadow: 0 0 20px white;
+	box-shadow: 0 0 20px white;
+}
+
+#form-content p {
+	margin: 0px 0px 16px 0px;
+	font-size: 155%;
+	text-align: center;
+	}
+
+#footer p{
+	font-size: 12px;
+	margin: 20px 0px 0px 0px;
+	text-align:right;
+}
+
+#bg {
+	position:fixed;
+	top:-50%;
+	left:-50%;
+	width:200%;
+	height:200%;
+	background: gainsboro;
+}
+
+#bg img {
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+        min-width:50%;
+        min-height:50%;
+}
