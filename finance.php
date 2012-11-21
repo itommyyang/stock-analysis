@@ -24,14 +24,14 @@ if(!isset($ticker)){
 
 <!-- header -->
 <div id="header">
-	<?php include("header.php") ?>
+	<?php include("modules/header.php") ?>
 <hr class="blockdivider">
 </div>
 	
 <!--mainbody -->
 <div id="mainbody">
 <div id="leftbar">
-	<?php include("left_bar.php"); ?>
+	<?php include("modules/left_bar.php"); ?>
 </div>
 
 <?php
@@ -41,23 +41,23 @@ if($proceed){
 ?>
 <div id="middlebar">
 	<!-- basic info include inormation process-->
-	<?php include("basic.php"); ?>
+	<?php include("modules/basic.php"); ?>
 		
 	<!-- chart mod javascript-->
-	<?php include("chart.php"); ?>
+	<?php include("modules/chart.php"); ?>
 	
 	<!-- opinion -->
-	<?php include("opinion.php"); ?>
+	<?php include("modules/opinion.php"); ?>
 	
 	<!-- comment -->
 	<?php 
-		//include("comment.php"); 
+		//include("modules/comment.php"); 
 	?>
 </div><!-- end middle column -->
 
 <div id="rightbar">
 	<!-- news mododule -->
-	<?php include("news.php"); ?>
+	<?php include("modules/news.php"); ?>
 </div><!-- end right column -->
 
 </div><!-- end mainbody -->
