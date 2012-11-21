@@ -15,20 +15,6 @@
 
 </style>
 <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-
-<!-- js for chart changing -->
-<script>
-var ticker = "<?= $ticker ?>";
-$(document).ready(function() {
-   $("button").click(
-   	function() {
-		$("#beChanged").replaceWith("<img id='beChanged' class='chart_img' src='http://ichart.yahoo.com/z?s="+ticker+"&t="+$(this).val()+"&q=c&l=on&z=l'>");
-		$("button").removeClass("on");
-		$(this).addClass("on");
-    }
-   );
- });
-</script>
 </head>
 
 <body OnLoad="document.check.ticker.focus();">

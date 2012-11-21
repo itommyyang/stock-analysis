@@ -74,12 +74,14 @@ a.footer:hover {color: white; text-decoration: underline;}
 
 button.range{
 	border: 1px solid #6698FF;
-	width: 62px;
+	width: auto;
 	height: 16px;
 	background-color:white;
 	color:#6698FF;
+	font-size:12px;
+	padding:1px 4px;
 	margin-bottom:3px;
-	padding:0px;
+	line-height:15px;
 }
 
 button.on{
@@ -88,8 +90,6 @@ button.on{
 	height: 16px;
 	background-color:#D8D8D8;
 	color:white;
-	margin-bottom:4px;
-	padding:0px;
 }
 
 /*header style*/

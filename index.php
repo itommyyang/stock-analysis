@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head profile="http://www.w3.org/2005/10/profile">
-	<link rel="icon" type="image/jpg" href="../images/favicon.jpg">
+	<link rel="icon" type="image/jpg" href="images/uw.jpg">
 	<title>t.finance - jtyang</title>
     <link href="css/index.css" rel="stylesheet">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
