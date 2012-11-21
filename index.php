@@ -17,7 +17,7 @@
 		<form method="POST" action="finance.php" name="login">
 		<fieldset>
 			<label>stock ticker:</label>
-			<input type="text" class="ticker" name="ticker" size="10" />
+			<input type="text" class="ticker" name="ticker" size="10" value="amzn" style="color:#888888;" onclick="this.value='';this.onclick='';this.style.color='#000';"/>
 			<input type="submit" class="submit" value="log in"/>
 		</fieldset>
 		</form>
