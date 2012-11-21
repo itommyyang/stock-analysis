@@ -8,7 +8,15 @@
       href="images/uw.jpg">
 <title>t.finance - jtyang</title>
 <link rel="stylesheet" href="css/tfinance.css" type="text/css">
-<script type="text/javascript" src="js/jquery.js"></script>
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+<style type="text/css">
+
+
+</style>
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+<!-- js for chart changing -->
 <script>
 var ticker = "<?= $ticker ?>";
 $(document).ready(function() {
